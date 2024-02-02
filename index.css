@@ -1,0 +1,224 @@
+@import url('https://fonts.google.com/specimen/Inter');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+}
+
+.main-heading {
+    font-family: "Inter";
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.categories-container {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: transparent;
+}
+
+
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.button {
+    height: 40px;
+    outline: none;
+    border: 2px solid;
+    cursor: pointer;
+    background-color: gray;
+    border-radius: 9px;
+    color: white;
+    font-family: "Inter";
+    font-weight: bold;
+    width: 100px;
+}
+
+.active-class {
+    height: 40px;
+    width: 100px;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 9px;
+}
+
+.product-container {
+    border: 1px solid gray;
+    margin-right: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    height: 70%;
+
+}
+
+
+.image {
+    width: 255px;
+    height: 170px;
+    margin-top: 14px;
+
+}
+
+.badge {
+    color: #171f46;
+    font-family: 'Inter';
+    font-size: 17px;
+    text-align: center;
+    padding-top: 5px;
+    padding-top: 15px;
+}
+
+.title {
+    color: #171f46;
+    font-family: 'Inter';
+    font-size: 17px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.price {
+    color: black;
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 1000;
+    text-align: center;
+    padding-bottom: 6px;
+}
+
+.vendor {
+    color: black;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 6px;
+
+}
+
+.discount {
+    color: red;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 6px;
+}
+
+.compare-price {
+    color: gray;
+    font-family: "Inter";
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: line-through;
+    padding-bottom: 6px;
+}
+
+.product-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 255px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px #e6e4e4;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 0px;
+    height: 190px;
+}
+
+.add-to-cart {
+    height: 30px;
+    width: 180px;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: orange;
+    outline: none;
+    cursor: pointer;
+    border: 0px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    width: 200px;
+}
+
+.hide-element {
+    display: none;
+}
+
+@media screen and (max-width : 576px) {
+
+    .image,
+    .product-data {
+        height: 200px;
+        width: 200px;
+    }
+
+    .add-to-cart {
+        width: 80%;
+    }
+}
+
+
+
+
+@media screen and (max-width : 780px) {
+
+    .image,
+    .product-data {
+        height: 200px;
+        width: 200px;
+    }
+
+    .add-to-cart {
+        width: 40%;
+    }
+}
+
+
+
